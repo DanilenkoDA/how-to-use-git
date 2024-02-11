@@ -40,4 +40,50 @@ git commit --amend -m "Your message".
 Откат на коммит git reset --hard b57h812.  
 Посмотреть изменения - git diff.  
 Для того, чтобы игнорировать некоторые файлы, создайте .gitignore и заполните его названиями файлов, которые нужно игнорировать.  
+
+## Работа с ветками   
+Клонирование репо -   
+```bash
+git clone git@github....
+```
+Создать ветку - 
+```bash
+git branch feature/abc
+```
+
+Переключиться на ветку -   
+```bash
+git checkout feature/abc
+```
+
+Показать ветки (локальные и удаленные) -    
+```bash
+git branch -a
+```
+
+Сравнить ветки -  
+```bash
+git diff main HEAD
+```
+
+Удалить ветку -  
+```bash
+git branch -D feature/abc
+```   
+
+Влить ветку в текущую -  
+```bash
+git merge feature/abc
+```
+
+Отправить ветку на удаленный репо -   
+```bash
+git push feature/abc
+```
+
+Обновить изменения -   
+```bash
+git pull feature/abc
+```
+
 ## Спасибо за внимание
